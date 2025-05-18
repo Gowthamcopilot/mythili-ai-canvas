@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-4 bg-[#fffdf6]">
+      <section className="pt-32 pb-24 px-4 bg-[#f7fcff]">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
@@ -26,7 +26,7 @@ const Home = () => {
               
               <div className="flex flex-wrap gap-4">
                 <Link to="/portfolio">
-                  <Button className="bg-primary hover:bg-yellow-dark text-primary-foreground px-6 py-6 rounded-md flex items-center gap-2 transition-colors">
+                  <Button className="bg-primary hover:bg-skyblue-dark text-primary-foreground px-6 py-6 rounded-md flex items-center gap-2 transition-colors">
                     Hire Me
                   </Button>
                 </Link>
@@ -40,8 +40,8 @@ const Home = () => {
             
             <div className="flex justify-center">
               <div className="relative">
-                {/* Yellow circle background */}
-                <div className="absolute -z-10 w-72 h-72 bg-yellow-light rounded-full right-[-20px] top-[-20px]"></div>
+                {/* Blue circle background */}
+                <div className="absolute -z-10 w-72 h-72 bg-skyblue-light rounded-full right-[-20px] top-[-20px]"></div>
                 
                 {/* Profile image placeholder - replace with actual profile image */}
                 <div className="w-72 h-72 rounded-full border-4 border-white shadow-xl overflow-hidden">
@@ -58,7 +58,7 @@ const Home = () => {
       </section>
       
       {/* My Recent Work Section */}
-      <section className="py-20 bg-[#fffdf6]">
+      <section className="py-20 bg-[#f7fcff]">
         <div className="container mx-auto px-4">
           <SectionHeading 
             title="My recent work" 
@@ -142,7 +142,7 @@ const Home = () => {
       </section>
       
       {/* Services Section */}
-      <section className="py-20 bg-[#fffdf6]">
+      <section className="py-20 bg-[#f7fcff]">
         <div className="container mx-auto px-4">
           <SectionHeading 
             title="Solving problems by the services" 
@@ -152,7 +152,7 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-yellow-light flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-skyblue-light flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                 </svg>
@@ -162,7 +162,7 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-yellow-light flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-skyblue-light flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
                 </svg>
@@ -172,7 +172,7 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-yellow-light flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-skyblue-light flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                 </svg>
@@ -210,14 +210,14 @@ const Home = () => {
             ))}
           </div>
           
-          <Button className="mt-12 bg-primary hover:bg-yellow-dark text-primary-foreground px-8 py-6">
+          <Button className="mt-12 bg-primary hover:bg-skyblue-dark text-primary-foreground px-8 py-6">
             See More
           </Button>
         </div>
       </section>
       
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#fffdf6]">
+      <section className="py-20 bg-[#f7fcff]">
         <div className="container mx-auto px-4">
           <SectionHeading
             title="What my clients say"
@@ -244,7 +244,7 @@ const Home = () => {
                 <p className="text-gray-600">
                   "Working with GOMG was an excellent experience. Their expertise in AI and data science helped us solve complex problems efficiently."
                 </p>
-                <div className="flex mt-4 text-yellow-400">
+                <div className="flex mt-4 text-skyblue">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
@@ -271,7 +271,7 @@ const Home = () => {
                 I'm always interested in new opportunities and challenges in the field of AI research. Let's connect and discuss how we can work together.
               </p>
               <Link to="/contact">
-                <Button className="bg-primary hover:bg-yellow-dark text-primary-foreground px-8 py-6 rounded-md transition-colors">
+                <Button className="bg-primary hover:bg-skyblue-dark text-primary-foreground px-8 py-6 rounded-md transition-colors">
                   Contact Now
                 </Button>
               </Link>
@@ -299,7 +299,7 @@ const Home = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   ></textarea>
                 </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-yellow-dark text-primary-foreground py-3">
+                <Button type="submit" className="w-full bg-primary hover:bg-skyblue-dark text-primary-foreground py-3">
                   Send Message
                 </Button>
               </form>
@@ -309,7 +309,7 @@ const Home = () => {
       </section>
       
       {/* Social Connect Section */}
-      <section className="py-16 bg-yellow">
+      <section className="py-16 bg-skyblue">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-primary-foreground mb-12">Let's <span className="font-bold">connect</span> there</h2>
           

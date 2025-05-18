@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Contact Button */}
         <div className="hidden md:block">
           <Link to="/contact">
-            <button className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-yellow-dark transition-colors">
+            <button className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-skyblue-dark transition-colors">
               Contact
             </button>
           </Link>
