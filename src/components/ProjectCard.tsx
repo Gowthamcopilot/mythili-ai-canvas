@@ -1,5 +1,6 @@
 
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -7,9 +8,10 @@ interface ProjectCardProps {
   tools: string[];
   image: string;
   className?: string;
+  id: number;
 }
 
-const ProjectCard = ({ title, description, tools, image, className }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, tools, image, className, id }: ProjectCardProps) => {
   return (
     <div 
       className={cn(
@@ -41,7 +43,10 @@ const ProjectCard = ({ title, description, tools, image, className }: ProjectCar
       </div>
       <div className="p-4">
         <p className="text-gray-600 text-sm">{description}</p>
-        <button className="mt-4 text-skyblue hover:text-skyblue-dark font-medium text-sm flex items-center gap-1">
+        <Link 
+          to={`/project/${id}`} 
+          className="mt-4 text-skyblue hover:text-skyblue-dark font-medium text-sm flex items-center gap-1"
+        >
           Learn more
           <svg 
             className="w-4 h-4" 
@@ -57,7 +62,7 @@ const ProjectCard = ({ title, description, tools, image, className }: ProjectCar
               d="M14 5l7 7m0 0l-7 7m7-7H3" 
             />
           </svg>
-        </button>
+        </Link>
       </div>
     </div>
   );

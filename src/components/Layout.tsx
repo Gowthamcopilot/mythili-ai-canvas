@@ -13,13 +13,16 @@ const Layout = ({ children }: LayoutProps) => {
 
   // Scroll to top on route change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }, [pathname]);
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f7fcff]">
       <Navbar />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow animate-fade-in">{children}</main>
       <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
 
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, ExternalLink } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -60,6 +60,35 @@ const Contact = () => {
                       <p className="text-sm text-gray-500">GitHub</p>
                       <a href="https://github.com/yourusername" className="font-medium text-skyblue hover:underline">
                         github.com/yourusername
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-skyblue bg-opacity-10 flex items-center justify-center text-skyblue">
+                      <svg className="w-5 h-5" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.8 94.26C73.7 94.26 94.6 73.36 94.6 47.46C94.6 21.56 73.8 0.55998 47.8 0.55998C21.8 0.55998 1 21.56 1 47.46C1 73.36 21.9 94.26 47.8 94.26Z" fill="white"/>
+                        <path d="M35.3 32.36H28.5V62.36H35.3V32.36Z" fill="currentColor"/>
+                        <path d="M37.7 62.36H44.5V28.46H37.7V62.36Z" fill="currentColor"/>
+                        <path d="M47.1 32.36V62.36H53.9V47.76L60.1 62.36H68.3L60.1 43.96L68.3 32.36H60.1L53.9 43.96V32.36H47.1Z" fill="currentColor"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Hugging Face</p>
+                      <a href="https://huggingface.co/yourusername" className="font-medium text-skyblue hover:underline">
+                        huggingface.co/yourusername
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-skyblue bg-opacity-10 flex items-center justify-center text-skyblue">
+                      <ExternalLink size={18} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">Medium</p>
+                      <a href="https://medium.com/@yourusername" className="font-medium text-skyblue hover:underline">
+                        medium.com/@yourusername
                       </a>
                     </div>
                   </div>

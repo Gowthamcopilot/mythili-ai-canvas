@@ -1,44 +1,10 @@
 
 import SectionHeading from "@/components/SectionHeading";
 import ProjectCard from "@/components/ProjectCard";
+import { projectsData } from "@/data/projectsData";
 
 const Portfolio = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Lumber Disease Prediction",
-      description: "Achieved 99% accuracy in classifying lumber disease using advanced deep learning techniques with CNN, DenseNet, and ResNet architectures. This project involved dataset creation, model training, and deployment.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      tools: ["CNN", "DenseNet", "ResNet", "Computer Vision"],
-      category: "Computer Vision"
-    },
-    {
-      id: 2,
-      title: "Wikipedia Dump Preprocessing for LLM",
-      description: "Created a pretraining dataset from raw Wikipedia XML. Extracted and cleaned plain text, entities, categories for use in downstream LLM tasks. Implemented efficient parsing and cleaning pipelines.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      tools: ["NLP", "LLM", "Python", "Data Processing"],
-      category: "Natural Language Processing"
-    },
-    {
-      id: 3,
-      title: "SQL Query Optimization Tool",
-      description: "Developed a tool to analyze and optimize SQL queries for performance. The tool suggests improvements based on execution plans and database statistics.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      tools: ["SQL", "Python", "Database Optimization"],
-      category: "Data Engineering"
-    },
-    {
-      id: 4,
-      title: "Time Series Forecasting System",
-      description: "Built a time series forecasting system for predicting stock prices using LSTM networks and traditional statistical methods.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      tools: ["LSTM", "Time Series", "Python", "Data Visualization"],
-      category: "Machine Learning"
-    }
-  ];
-
-  const categories = Array.from(new Set(projects.map(p => p.category)));
+  const categories = Array.from(new Set(projectsData.map(p => p.category)));
   
   return (
     <div className="min-h-screen pt-24">
@@ -68,9 +34,10 @@ const Portfolio = () => {
           
           {/* Projects grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {projects.map((project) => (
+            {projectsData.map((project) => (
               <ProjectCard
                 key={project.id}
+                id={project.id}
                 title={project.title}
                 description={project.description}
                 tools={project.tools}
