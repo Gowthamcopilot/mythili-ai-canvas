@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-gray-50 pt-16 pb-8">
+    <footer className="bg-[#fffdf6] pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
@@ -21,27 +21,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-gray-800 mb-3">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-600 hover:text-skyblue transition-colors">
+                <Link to="/" className="text-gray-600 hover:text-primary transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-600 hover:text-skyblue transition-colors">
+                <Link to="/about" className="text-gray-600 hover:text-primary transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className="text-gray-600 hover:text-skyblue transition-colors">
+                <Link to="/portfolio" className="text-gray-600 hover:text-primary transition-colors">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/skills" className="text-gray-600 hover:text-skyblue transition-colors">
+                <Link to="/skills" className="text-gray-600 hover:text-primary transition-colors">
                   Skills
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-600 hover:text-skyblue transition-colors">
+                <Link to="/contact" className="text-gray-600 hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
@@ -55,7 +55,7 @@ const Footer = () => {
                 href="https://github.com/yourusername" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-skyblue hover:text-white transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
               >
                 <Github size={18} />
               </a>
@@ -63,13 +63,13 @@ const Footer = () => {
                 href="https://linkedin.com/in/yourprofile" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-skyblue hover:text-white transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
               >
                 <Linkedin size={18} />
               </a>
               <a 
                 href="mailto:your.email@example.com" 
-                className="w-10 h-10 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-skyblue hover:text-white transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
               >
                 <Mail size={18} />
               </a>

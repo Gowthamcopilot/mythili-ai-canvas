@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
           to="/"
-          className="text-xl font-bold text-gradient"
+          className="text-xl font-bold text-primary"
         >
           GOMG
         </Link>
@@ -49,12 +49,21 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="text-gray-800 hover:text-skyblue transition-colors relative group"
+              className="text-gray-800 hover:text-primary transition-colors relative group"
             >
               {item.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-skyblue transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
+        </div>
+
+        {/* Contact Button */}
+        <div className="hidden md:block">
+          <Link to="/contact">
+            <button className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-yellow-dark transition-colors">
+              Contact
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -99,12 +108,19 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="block py-2 text-gray-800 hover:text-skyblue"
+              className="block py-2 text-gray-800 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.name}
             </Link>
           ))}
+          <Link
+            to="/contact"
+            className="block py-2 text-primary font-medium"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </nav>
