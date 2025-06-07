@@ -46,8 +46,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">LinkedIn</p>
-                      <a href="https://linkedin.com/in/yourprofile" className="font-medium text-skyblue hover:underline">
-                        linkedin.com/in/yourprofile
+                      <a href="https://www.linkedin.com/in/goli-gowtham-434997254/" className="font-medium text-skyblue hover:underline">
+                        linkedin.com/in/gowtham
                       </a>
                     </div>
                   </div>
@@ -58,8 +58,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">GitHub</p>
-                      <a href="https://github.com/yourusername" className="font-medium text-skyblue hover:underline">
-                        github.com/yourusername
+                      <a href="https://github.com/Gowtham-AI25/" className="font-medium text-skyblue hover:underline">
+                        github.com/Gowtham-AI25
                       </a>
                     </div>
                   </div>
@@ -75,8 +75,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Hugging Face</p>
-                      <a href="https://huggingface.co/yourusername" className="font-medium text-skyblue hover:underline">
-                        huggingface.co/yourusername
+                      <a href="https://huggingface.co/gowthamgoli" className="font-medium text-skyblue hover:underline">
+                        huggingface.co/gowthamgoli
                       </a>
                     </div>
                   </div>
@@ -87,8 +87,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Medium</p>
-                      <a href="https://medium.com/@yourusername" className="font-medium text-skyblue hover:underline">
-                        medium.com/@yourusername
+                      <a href="https://medium.com/@Gowtham_25" className="font-medium text-skyblue hover:underline">
+                        medium.com/@Gowtham_25
                       </a>
                     </div>
                   </div>
